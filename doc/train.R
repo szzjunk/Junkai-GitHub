@@ -45,7 +45,12 @@ train_rf = function(trainall){
   time = end - begin #Total Running Time
   return(list(fit = rf, time = time))
   
-  
+train_rf = function(trainall){
+    begin = Sys.time()
+    rf <-randomForest(class~.,data=trainall,
+                      importance=TRUE,mtry=49,
+                      ntree=200,keep.forest=TRUE,
+                      nodesize=3)
 ####SVM by Yuhan Cha  
   train_svm = function(traindata){
     begin = Sys.time()
