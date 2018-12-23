@@ -12,7 +12,7 @@
 ###  -  class labels for training images
 ### Output: training model specification and time used to train the model
 
-
+fsjasdfasjglajsj
 ####GBM by Zhongxing Xue
 
 train_GBM <- function(traindata, shr = 0.03, dep = 3, ntree = 800) {
