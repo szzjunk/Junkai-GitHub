@@ -25,6 +25,6 @@ https://github.com/TZstatsADS/Spring2018-Project4-grp6
 
 https://github.com/TZstatsADS/Spring2018-Project5-grp4
 
-6. Key Word Search Engine: AirBnB Recommendation System
+6. Key Word Search Engine: Airbnb Recommendation System
 
 https://github.com/ColumbiaUnivStat-AdvancedDataAnalysis/Group20-Project
