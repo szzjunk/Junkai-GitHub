@@ -23,7 +23,7 @@
 - The _**doc**_ folder contains all the code with documentation (integrated report with code).
   - If you just want to take a look at the report & code, double-click to open the HTML file
   - If you want to check the code (run it), open the ipynb file by jupyter notebook (Anaconda)
-   - To successfully execute the code, the data path and ITCH filename need to be set up, and the 01302019.NASDAQ_ITCH50 and message_types.xlsx need to be put into the data path
+   - To successfully execute the code, the data path and ITCH filename need to be set up in the jupyter notebook, and the 01302019.NASDAQ_ITCH50 and message_types.xlsx need to be put into the data path
    
 - The _**data**_ folder is supposed to store 01302019.NASDAQ_ITCH50 and message_types.xlsx. 
 
@@ -32,4 +32,4 @@
   - order_book.h5: stores the rebuilt order flow for the given day
   - vwap_store.h5: stores the VWAP of each stock
 
-- The _**Use Batch File to Run Python Script as Program**_ folder contains a .bat file that can automatically use command prompt to call Python.exe and tranfer parameters into Python script for executing the code. 
+- The _**Use Batch File to Run Python Script as Program**_ folder contains a .bat file that can automatically use command prompt to call Python.exe and tranfer parameters into Python script for executing the .py file. 
