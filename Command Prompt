@@ -1,0 +1,11 @@
+# Open Jupyter Notebook
+1. at the command prompt
+- CMD - jupyter notebook - enter
+2. Change Directory
+- type in "cd Downloads" - type in "jupyter notebook"
+3. Take back up one directory
+- type in "cd .."
+4. see the directory
+- type in "dir"; if you are using mac "ls"
+5. clean the screen
+- type in "cls"
