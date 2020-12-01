@@ -1,0 +1,1 @@
+This folder is dedicated for saving the SQL questions from LEETCODE.
