@@ -1,0 +1,4 @@
+select b.emp_no, b.salary, b.from_date, b.to_date, a.dept_no
+from  dept_manager as a
+inner join salaries as b on a.emp_no = b.emp_no
+order by b.emp_no asc;
