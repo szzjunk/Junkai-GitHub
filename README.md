@@ -1,7 +1,7 @@
 # Junkai-GitHub
 Junkai Zhang's Github | Machine Learning | Data Science | LeetCode | Group Projects Links
-
-Group Projects:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Group Projects at Columbia University:**
 
 1. Text Mining: What did the presidents say at their inauguation?
 
