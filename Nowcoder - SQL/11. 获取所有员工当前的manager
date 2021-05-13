@@ -1,0 +1,3 @@
+select a.emp_no, b.emp_no as manager from 
+dept_emp as a left join dept_manager as b on a.dept_no = b.dept_no
+where b.emp_no != a.emp_no
