@@ -1,0 +1,6 @@
+select tmp.dept_no, tmp.emp_no, tmp.salary as maxSalary from
+(select a.dept_no, a.emp_no, b.salary, 
+ rank() over(partition by dept_no order by salary desc) as sa_rank
+from dept_emp as a left join salaries as b on a.emp_no = b.emp_no) as tmp
+where sa_rank < 2
+order by tmp.dept_no asc
