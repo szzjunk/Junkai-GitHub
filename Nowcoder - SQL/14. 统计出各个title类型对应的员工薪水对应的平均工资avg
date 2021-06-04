@@ -1,4 +1,0 @@
-select a.title, avg(b.salary)
-from titles as a left join salaries as b on a.emp_no = b.emp_no
-group by a.title
-order by avg(b.salary) asc
