@@ -1,0 +1,4 @@
+select distinct de.dept_no, d.dept_name, count(s.salary) over (partition by de.dept_no) as 'sum' from
+dept_emp as de left join departments as d on de.dept_no = d.dept_no left join
+salaries as s on de.emp_no = s.emp_no
+order by de.dept_no asc
