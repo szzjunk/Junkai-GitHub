@@ -1,0 +1,6 @@
+select distinct s.emp_no, 
+max(s.salary) over (partition by emp_no) - min(s.salary) over (partition by emp_no) as growth from
+salaries as s left join employees as e on s.emp_no = e.emp_no
+where s.emp_no in (select emp_no from salaries where to_date = '9999-01-01') and 
+(s.to_date = '9999-01-01' or s.from_date = e.hire_date)
+order by growth asc
