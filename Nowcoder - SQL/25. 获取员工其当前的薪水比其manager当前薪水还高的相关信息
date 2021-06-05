@@ -1,0 +1,5 @@
+select s.emp_no, jnt.manager_no, s.salary as emp_salary, jnt.manager_salary from
+salaries as s left join dept_emp as de on s.emp_no = de.emp_no 
+		left join (select dm.emp_no as manager_no, s1.salary as manager_salary, dm.dept_no
+           from dept_manager as dm left join salaries as s1 on dm.emp_no = s1.emp_no) as jnt on de.dept_no = jnt.dept_no
+where s.salary > jnt.manager_salary
