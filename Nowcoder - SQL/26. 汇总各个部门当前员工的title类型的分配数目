@@ -1,0 +1,6 @@
+select distinct d.dept_no, d.dept_name, t.title,     # distinct 应用全局
+count(t.title) over (partition by d.dept_name, t.title) as 'count' from  # 窗口函数应用于两个列
+departments as d left join dept_emp as de on d.dept_no = de.dept_no
+left join titles as t on de.emp_no = t.emp_no
+where t.title is not null     #非空
+order by d.dept_no, t.title asc
