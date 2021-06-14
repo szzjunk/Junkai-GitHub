@@ -1,0 +1,5 @@
+select c.name, count(fc.film_id) from 
+category as c left join film_category as fc on c.category_id = fc.category_id
+left join film as f on fc.film_id = f.film_id
+where f.description like '%robot%' and fc.category_id in 
+(select category_id from film_category group by category_id having count(film_id) >=5)
